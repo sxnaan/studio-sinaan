@@ -8,10 +8,10 @@ body, html {
 /* Full-height scrolling background */
 .parallax {
   position: relative; /* Positioned relative to allow scrolling */
-  height: 250vh; /* Allows for enough height to scroll through the background */
-  background: url('assets/bg.png') no-repeat center center; /* Your background image */
+  height: 150vw;
+  background: url('assets/bg.png') no-repeat top center; /* Your background image */
   background-size: cover; /* Cover the entire div */
-  background-position: center 100%; /* Adjust starting position */
+  background-position: center bottom; /* Adjust starting position */
   z-index: 1;
 }
 
@@ -30,13 +30,13 @@ body, html {
 
 /* Flex layout for name */
 .name {
-  font-size: 2.5em;
+  font-size: clamp(1rem, 4vw, 2.5rem);
   font-weight: bold;
   text-align: left;
   line-height: 0;
   padding-bottom: 1em;
   padding-left: 2em;
-  width: 50%;
+  width: 75%;
   overflow: scroll;
 }
 
@@ -61,12 +61,13 @@ body, html {
   flex-direction: column;
   font-size: 1.5em;
   text-align: right;
-  padding-bottom: 3em;
+  padding-bottom: 5%;
   padding-right: 2em;
-  width: 50%;
+  width: 25%;
 }
 
 .details h4 {
+  font-size: clamp(1rem, 2vw, 1.5rem);
   margin: 0; /* Remove default margins */
   padding: 0; /* Remove default padding */
   font-weight: 300;
