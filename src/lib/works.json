@@ -1,0 +1,46 @@
+[
+    {
+        "id": "001",
+        "title": "Still Life",
+        "src": "/works/2021/fall/IMG_1325.png",
+        "x": 18,
+        "y": 24,
+        "media": ["charcoal"],
+        "surface": "paper",
+        "year": "2021",
+        "season": "fall"
+    },
+    {
+        "id": "002",
+        "title": "Dragonfruit 1",
+        "src": "/works/2022/spring/IMG_2421.png",
+        "x": 9,
+        "y": 12,
+        "media": ["acrylic"],
+        "surface": "canvas",
+        "year": "2022",
+        "season": "spring"
+    },
+    {
+        "id": "003",
+        "title": "Dragonfruit 2",
+        "src": "/works/2022/spring/IMG_2422.png",
+        "x": 9,
+        "y": 12,
+        "media": ["acrylic"],
+        "surface": "canvas",
+        "year": "2022",
+        "season": "spring"
+    },
+    {
+        "id": "004",
+        "title": "Dragonfruit 3",
+        "src": "/works/2022/spring/IMG_2423.png",
+        "x": 9,
+        "y": 12,
+        "media": ["acrylic"],
+        "surface": "canvas",
+        "year": "2022",
+        "season": "spring"
+    }
+]

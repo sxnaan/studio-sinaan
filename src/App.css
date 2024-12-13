@@ -1,17 +1,17 @@
 /* Set the body and html to allow scrolling */
 body, html {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: "Helvetica Neue", sans-serif;
   height: 100%; /* Ensure full height */
+  scroll-behavior: smooth;
 }
 
 /* Full-height scrolling background */
 .parallax {
   position: relative; /* Positioned relative to allow scrolling */
-  height: 150vw;
-  background: url('assets/bg.png') no-repeat top center; /* Your background image */
+  height: 150vh;
+  background: url('assets/background.png') no-repeat center bottom; /* Your background image */
   background-size: cover; /* Cover the entire div */
-  background-position: center bottom; /* Adjust starting position */
   z-index: 1;
 }
 
@@ -24,54 +24,55 @@ body, html {
   width: 100%;
   position: fixed;
   top: 0;
-  color: #f9f9f9;
   z-index: 2;
 }
 
 /* Flex layout for name */
 .name {
-  font-size: clamp(1rem, 4vw, 2.5rem);
-  font-weight: bold;
+  font-size: 1em;
   text-align: left;
-  line-height: 0;
-  padding-bottom: 1em;
-  padding-left: 2em;
   width: 75%;
-  overflow: scroll;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 2em;
+  color: #f9f9f9;
 }
 
 .firstname {
-  font-size: 3.5em;
-  font-weight: bold;
-  padding: 0;
-  margin-bottom: 0.5em;
+  font-size: clamp(7rem, 15vw, 12rem);
+  letter-spacing: -0.5rem;
+  margin: 0;
 }
 
 .lastname {
-  margin: 0;
-  padding: 0;
-  font-size: 0.65em;
+  font-size: clamp(1rem, 5vw, 2rem);
   font-weight: 300;
-  padding-left: 10px;
+  margin-top: -2rem;
 }
 
 /* Details section */
 .details {
+  height: 30%;
   display: flex;
+  justify-content: center;
+  align-items: flex-end;
   flex-direction: column;
+  gap: 4px;
   font-size: 1.5em;
-  text-align: right;
-  padding-bottom: 5%;
-  padding-right: 2em;
   width: 25%;
+  padding-right: 2em;
+  color: #f9f9f9;
 }
 
 .details h4 {
-  font-size: clamp(1rem, 2vw, 1.5rem);
   margin: 0; /* Remove default margins */
   padding: 0; /* Remove default padding */
   font-weight: 300;
-  transition: font-weight 0.4s cubic-bezier(0.4, 0, 0.2, 1); 
+  transition: font-weight 0.15s cubic-bezier(0.4, 0, 0.2, 1); 
+  background-color: #f9f9f921;
 }
 
 .details h4:hover {
@@ -81,4 +82,148 @@ body, html {
 .details a {
     text-decoration: none;
     color: inherit;
+}
+
+.page-title {
+  font-size: clamp(7rem, 15vw, 12rem);
+  letter-spacing: -0.5rem;
+  margin: 0;
+}
+
+.page-container{
+  padding: 2rem;
+}
+
+.top-nav-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding-top: 20px;
+}
+
+.top-nav {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.top-nav h3 {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  width: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  transition: font-weight 0.15s cubic-bezier(0.4, 0, 0.2, 1); 
+}
+
+.top-nav h3:hover {
+  background-color: #67676721;
+  cursor: pointer;
+}
+
+.top-nav a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.portfolio-grid-1-col img {
+  width: 100%; /* Make each image take full width of its container */
+  display: block; /* Avoid inline spacing issues */
+  margin-bottom: 4%; /* Space between images in the same column */
+}
+
+.portfolio-grid-2-col {
+  column-count: 2; /* Set the number of columns */
+  column-gap: 1rem; /* Space between columns */
+}
+
+.portfolio-grid-2-col img {
+  width: 100%; /* Make each image take full width of its container */
+  margin-bottom: 8.5%; /* Space between images in the same column */
+  display: block; /* Avoid inline spacing issues */
+}
+
+.footer {
+  height: 200px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #26263a;
+  color: #525274;
+  letter-spacing: -0.05rem;
+}
+
+.footer-copyright {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+}
+
+.footer-copyright h3 {
+  font-weight: 400;
+  margin-bottom: 0;
+  margin-top: 0;
+  color: #525274;
+}
+
+
+.footer-copyright h3 b{
+  font-weight: 800;
+  margin-bottom: 0;
+  margin-top: 0;
+  color: #6f6f9c;
+}
+
+.footer-social {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #6f6f9c;
+}
+
+.footer a:visited {
+  color: #6f6f9c;
+  text-decoration: none;
+}
+
+.piece-title {
+  font-size: clamp(3rem, 15vw, 7rem);
+  letter-spacing: -0.3rem;
+  margin: 0;
+}
+
+
+/* RESPONSIVENESS */
+/* Increase padding for medium-sized screens */
+@media (min-width: 768px) {
+  .page-container {
+      padding: 2rem 6rem; /* Top/Bottom: 2rem, Left/Right: 6rem */
+  }
+}
+
+/* Further increase padding for larger screens */
+@media (min-width: 1200px) {
+  .page-container {
+      padding: 2rem 10rem; /* Top/Bottom: 2rem, Left/Right: 10rem */
+  }
+  .portfolio-grid-2-col {
+    column-gap: 2rem; /* Space between columns */
+  }
 }
