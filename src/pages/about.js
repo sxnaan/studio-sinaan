@@ -1,5 +1,5 @@
 import React from 'react';
-import Menu from '../components/menu'
+import Header from '../components/header'
 import Footer from '../components/footer'
 import ScrollToTop from '../components/scrollToTop'
 
@@ -9,13 +9,13 @@ const About = () => {
     return (
         <>
             <ScrollToTop/>
-            <Menu />
+            <Header />
             <div className="page-container">                
                 <h1 className='page-title'>About</h1>
                 <p>SiNAAN ABDURREHMAN YOUNUS is a 23 year old mixed media artist from Baltimore.</p>
                 <p>He first studied fine art at Perry Hall Middle School under Sarah Deacon, and later at the University of Maryland with Emily Conover, Brandon Donahue, and Cy Keener, amongst others. 
                     He has worked across a full range of wet and dry media. He has also explored digital fabrication (3D printing/laser cutting) and augmented/virtual reality.</p>
-                <p>His work is driven by a single, simple question — <em>Can we create the art that we enjoy consuming?</em></p>
+                <p>His work is driven by a single question — <em>Can we create the art that we enjoy consuming?</em></p>
                 <p>To him, it is not just possible, but necessary, for that answer to be yes.</p>  
                 <br></br>
                 

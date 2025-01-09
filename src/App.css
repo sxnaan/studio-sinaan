@@ -3,14 +3,14 @@ body, html {
   margin: 0;
   font-family: "Helvetica Neue", sans-serif;
   height: 100%; /* Ensure full height */
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
 }
 
 /* Full-height scrolling background */
 .parallax {
   position: relative; /* Positioned relative to allow scrolling */
   height: 150vh;
-  background: url('assets/background.png') no-repeat center bottom; /* Your background image */
+  background: url('assets/new-background.jpg') no-repeat center bottom; /* Your background image */
   background-size: cover; /* Cover the entire div */
   z-index: 1;
 }
@@ -91,18 +91,18 @@ body, html {
 }
 
 .page-container{
-  padding: 2rem;
+  padding: 2rem 6rem;
 }
 
-.top-nav-container {
+.header {
   display: flex;
-  flex-direction: column;
   align-items: center;
   background-color: #f9f9f9;
+  flex-direction: column;
   padding-top: 20px;
 }
 
-.top-nav {
+.menu-desktop {
   height: 50px;
   width: 100%;
   display: flex;
@@ -112,7 +112,7 @@ body, html {
   padding-bottom: 20px;
 }
 
-.top-nav h3 {
+.menu-desktop h3 {
   height: 50px;
   display: flex;
   align-items: center;
@@ -122,12 +122,12 @@ body, html {
   transition: font-weight 0.15s cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
-.top-nav h3:hover {
+.menu-desktop h3:hover {
   background-color: #67676721;
   cursor: pointer;
 }
 
-.top-nav a {
+.menu-desktop a {
   text-decoration: none;
   color: inherit;
 }
@@ -151,14 +151,14 @@ body, html {
 
 .footer {
   height: 200px;
+  max-height: 1000px;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: #26263a;
-  color: #525274;
   letter-spacing: -0.05rem;
+  background-color: #A39BA8;
 }
 
 .footer-copyright {
@@ -173,15 +173,14 @@ body, html {
   font-weight: 400;
   margin-bottom: 0;
   margin-top: 0;
-  color: #525274;
+  color: #c6bbcd;
 }
-
 
 .footer-copyright h3 b{
   font-weight: 800;
   margin-bottom: 0;
   margin-top: 0;
-  color: #6f6f9c;
+  color: #d3c8da;
 }
 
 .footer-social {
@@ -191,31 +190,160 @@ body, html {
   align-items: center;
   justify-content: center;
   margin-top: 10px;
+  color: #d3c8da;
 }
 
 .footer a {
   text-decoration: none;
-  color: #6f6f9c;
+  color: #d3c8da;
 }
 
 .footer a:visited {
-  color: #6f6f9c;
   text-decoration: none;
+  color: #d3c8da;
 }
 
-.piece-title {
-  font-size: clamp(3rem, 15vw, 7rem);
+.work-container{
+  display: flex;
+}
+
+.work-display {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  height: auto;
+}
+
+.work-display img {
+  width: fit-content;
+  max-width: 100%;
+  max-height: 140vh;
+}
+
+
+.work-title {
+  font-size: clamp(2rem, 15vw, 4rem);
   letter-spacing: -0.3rem;
   margin: 0;
+  line-height: 1;
+}
+
+.work-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.work-details h3 {
+  font-weight: 300;
+  margin: 0;
+}
+
+.x-box {
+  display: flex;
+  justify-content: flex-start;
+  font-weight: 300;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.box a {
+  text-decoration: none;
+  color: inherit;
+  background-color: #f9f9f921;
+  margin: 0;
+}
+
+.box a h2 {
+  font-weight: 300;
+}
+
+.work-nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.work-nav h3{
+  font-weight: 300;
+  text-align: right;
+}
+.work-nav a{
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+
+}
+
+.work-info {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: right;
+  text-align: right;
+  overflow-wrap: break-word;
+}
+
+.commissions-container {
+  display: flex;
 }
 
 
 /* RESPONSIVENESS */
 /* Increase padding for medium-sized screens */
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .page-container {
-      padding: 2rem 6rem; /* Top/Bottom: 2rem, Left/Right: 6rem */
+      padding: 2rem; /* Top/Bottom: 2rem, Left/Right: 6rem */
   }
+
+  .details {
+    padding-right: 0.5em;
+  }
+
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: sticky; /* Make the header sticky */
+    top: 0; /* Stick to the top of the viewport */
+    z-index: 1000; 
+    padding-top: 0.75rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .header img {
+    padding-left: 1rem;
+  }
+
+  .work-container {
+    flex-direction: column;
+  }
+
+  .work-display {
+    width: 100%;
+  }
+
+  .work-display img {
+    width: 100%;
+    height: auto;
+  }
+
+  .work-info {
+    width: 100%;
+    align-items: first baseline;
+    text-align: left;
+    padding-bottom: 2rem;
+  }
+
 }
 
 /* Further increase padding for larger screens */
@@ -224,6 +352,6 @@ body, html {
       padding: 2rem 10rem; /* Top/Bottom: 2rem, Left/Right: 10rem */
   }
   .portfolio-grid-2-col {
-    column-gap: 2rem; /* Space between columns */
+    column-gap: 2em; /* Space between columns */
   }
 }

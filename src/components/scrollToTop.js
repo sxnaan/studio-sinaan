@@ -1,12 +1,19 @@
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
-const ScrollToTop = () => {
+const ScrollToTop = ({ scrollToWindowTop = true }) => {
   const location = useLocation();
 
   useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [location]);
+    if (scrollToWindowTop) {
+      window.scrollTo(0, 0);
+    } else {
+      const pageContainer = document.querySelector('.page-container');
+      if (pageContainer) {
+        pageContainer.scrollIntoView({ behavior: 'auto', block: 'start' });
+      }
+    }
+  }, [location, scrollToWindowTop]);
 
   return null;
 };

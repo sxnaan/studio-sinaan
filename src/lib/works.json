@@ -5,42 +5,221 @@
         "src": "/works/2021/fall/IMG_1325.png",
         "x": 18,
         "y": 24,
-        "media": ["charcoal"],
-        "surface": "paper",
+        "media": ["Charcoal"],
+        "surface": "Paper",
         "year": "2021",
-        "season": "fall"
+        "season": "Fall",
+        "display": {
+            "featured": true,
+            "pane": 1,
+            "position": 2
+        }
     },
     {
         "id": "002",
-        "title": "Dragonfruit 1",
+        "title": "Dragon Fruit 1",
         "src": "/works/2022/spring/IMG_2421.png",
         "x": 9,
         "y": 12,
-        "media": ["acrylic"],
-        "surface": "canvas",
+        "media": ["Acrylic"],
+        "surface": "Canvas",
         "year": "2022",
-        "season": "spring"
+        "season": "Spring",
+        "display": {
+            "featured": true,
+            "pane": 1,
+            "position": 7
+        }
     },
     {
         "id": "003",
-        "title": "Dragonfruit 2",
+        "title": "Dragon Fruit 2",
         "src": "/works/2022/spring/IMG_2422.png",
         "x": 9,
         "y": 12,
-        "media": ["acrylic"],
-        "surface": "canvas",
+        "media": ["Acrylic"],
+        "surface": "Canvas",
         "year": "2022",
-        "season": "spring"
+        "season": "Spring",
+        "display": {
+            "featured": true,
+            "pane": 1,
+            "position": 8
+        }
     },
     {
         "id": "004",
-        "title": "Dragonfruit 3",
+        "title": "Dragon Fruit 3",
         "src": "/works/2022/spring/IMG_2423.png",
         "x": 9,
         "y": 12,
-        "media": ["acrylic"],
-        "surface": "canvas",
+        "media": ["Acrylic"],
+        "surface": "Canvas",
         "year": "2022",
-        "season": "spring"
+        "season": "Spring",
+        "display": {
+            "featured": true,
+            "pane": 1,
+            "position": 9
+        }
+    },
+    {
+        "id": "005",
+        "title": "Untitled",
+        "src": "/works/2022/spring/IMG_2430.png",
+        "x": 24,
+        "y": 30,
+        "media": ["Acrylic"],
+        "surface": "Canvas",
+        "year": "2022",
+        "season": "Spring",
+        "display": {
+            "featured": false
+        }
+    },
+    {
+        "id": "006",
+        "title": "California & Milwaukee",
+        "src": "/works/2022/summer/IMG_2655.png",
+        "x": 8,
+        "y": 12,
+        "media": ["Acrylic"],
+        "surface": "Paper",
+        "year": "2022",
+        "season": "Summer",
+        "display": {
+            "featured": true,
+            "pane": 1,
+            "position": 10
+        }
+    },
+    {
+        "id": "007",
+        "title": "Boy and Mother",
+        "src": "/works/2022/fall/IMG_2820.png",
+        "x": 24,
+        "y": 30,
+        "media": ["Acrylic", "Marker"],
+        "surface": "Paper",
+        "year": "2022",
+        "season": "Fall",
+        "display": {
+            "featured": true,
+            "pane": 1,
+            "position": 1
+        }
+    },
+    {
+        "id": "008",
+        "title": "Self Portrait 1", 
+        "src": "/works/2022/fall/IMG_2830.png",
+        "x": 18,
+        "y": 24,
+        "media": ["Acrylic"],
+        "surface": "Canvas",
+        "year": "2022",
+        "season": "Fall",
+        "display": {
+            "featured": true,
+            "pane": 3,
+            "position": 1
+        }
+    },
+    {
+        "id": "009",
+        "title": "Self Portrait 2", 
+        "src": "/works/2022/fall/IMG_2831.png",
+        "x": 18,
+        "y": 24,
+        "media": ["Acrylic"],
+        "surface": "Canvas",
+        "year": "2022",
+        "season": "Fall",
+        "display": {
+            "featured": true,
+            "pane": 3,
+            "position": 2
+        }
+    },
+    {
+        "id": "010",
+        "title": "Superimposition", 
+        "src": "/works/2022/fall/IMG_2840.png",
+        "x": 20,
+        "y": 30,
+        "media": ["Acrylic"],
+        "surface": "Canvas",
+        "year": "2022",
+        "season": "Fall",
+        "display": {
+            "featured": true,
+            "pane": 1,
+            "position": 5
+        }
+    },
+    {
+        "id": "011",
+        "title": "Linda 1", 
+        "src": "/works/2023/spring/IMG_3678.png",
+        "x": 18,
+        "y": 36,
+        "media": ["Oil"],
+        "surface": "Canvas",
+        "year": "2023",
+        "season": "Spring",
+        "display": {
+            "featured": true,
+            "pane": 1,
+            "position": 3
+        }
+    },
+    {
+        "id": "012",
+        "title": "Linda 2", 
+        "src": "/works/2023/spring/IMG_3679.png",
+        "x": 24,
+        "y": 36,
+        "media": ["Oil"],
+        "surface": "Canvas",
+        "year": "2023",
+        "season": "Spring",
+        "display": {
+            "featured": true,
+            "pane": 1,
+            "position": 4
+        }
+    },
+    {
+        "id": "013",
+        "title": "Untitled", 
+        "src": "/works/2023/summer/IMG_3721.png",
+        "x": 9,
+        "y": 12,
+        "media": ["Oil"],
+        "surface": "Raw Canvas",
+        "year": "2023",
+        "season": "Summer",
+        "display": {
+            "featured": true,
+            "pane": 1,
+            "position": 6
+        }
+    },
+    {
+        "id": "014",
+        "title": "Untitled", 
+        "src": "/works/2024/winter/IMG_4124.jpeg",
+        "x": 20,
+        "y": 30,
+        "media": ["Oil"],
+        "surface": "Canvas",
+        "year": "2024",
+        "season": "Winter",
+        "display": {
+            "featured": true,
+            "pane": 2,
+            "position": 1
+        }
     }
+
 ]
