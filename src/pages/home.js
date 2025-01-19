@@ -18,9 +18,11 @@ const Home = () => {
         <>
         <div className="parallax">
             <div className="text-overlay">
-                <div className="name">
-                    <h1 className="firstname">SiNAAN</h1>
-                    <h1 className="lastname">ABDURREHMAN YOUNUS</h1>
+                <div className='name-container'>
+                    <div className="name">
+                        <h1 className="firstname">SiNAAN</h1>
+                        <h1 className="lastname">ABDURREHMAN YOUNUS</h1>
+                    </div>
                 </div>
                 
                 <div className="details">
