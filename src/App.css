@@ -343,11 +343,11 @@ body, html {
   .firstname {
     padding: 0;
     margin: 0;
-    font-size: 18vw;
+    font-size: 25vw;
   }
 
   .lastname {
-    font-size: 5vw;
+    font-size: 8vw;
     font-weight: 400;
   }
 
