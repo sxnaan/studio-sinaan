@@ -164,7 +164,7 @@ body, html {
   flex-direction: column;
   letter-spacing: -0.05rem;
   background-color: #000000;
-  color: #f9f9f9;
+  color: #f9f9f985;
 }
 
 .footer-copyright {
@@ -202,7 +202,7 @@ body, html {
 
 .footer a {
   text-decoration: none;
-  color: inherit;
+  color: #f9f9f9;
 }
 
 .footer a:visited {
