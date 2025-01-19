@@ -43,7 +43,7 @@ body, html {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  color: #fcececa0;
+  color: #fcc474;
 }
 
 .firstname {
@@ -54,7 +54,8 @@ body, html {
 
 .lastname {
   font-size: clamp(1rem, 5vw, 2rem);
-  font-weight: 300;
+  letter-spacing: -0.2rem;
+  font-weight: 400;
   margin-top: -2rem;
 }
 
@@ -69,7 +70,7 @@ body, html {
   font-size: 1.5em;
   width: 25%;
   padding-right: 2em;
-  color: #f9f9f9;
+  color: #fcc474;
 }
 
 .details h4 {
@@ -163,7 +164,7 @@ body, html {
   justify-content: center;
   flex-direction: column;
   letter-spacing: -0.05rem;
-  background-color: #A39BA8;
+  background-color: #fcc474;
 }
 
 .footer-copyright {
@@ -178,14 +179,14 @@ body, html {
   font-weight: 400;
   margin-bottom: 0;
   margin-top: 0;
-  color: #c6bbcd;
+  color: #d3953f;
 }
 
 .footer-copyright h3 b{
   font-weight: 800;
   margin-bottom: 0;
   margin-top: 0;
-  color: #d3c8da;
+  color: #d3953f;
 }
 
 .footer-social {
@@ -195,17 +196,17 @@ body, html {
   align-items: center;
   justify-content: center;
   margin-top: 10px;
-  color: #d3c8da;
+  color: #d3953f;
 }
 
 .footer a {
   text-decoration: none;
-  color: #d3c8da;
+  color: #d3953f;
 }
 
 .footer a:visited {
   text-decoration: none;
-  color: #d3c8da;
+  color: #d3953f;
 }
 
 .work-container{
@@ -353,7 +354,7 @@ body, html {
   }
 
   .header {
-    flex-direction: row;
+    flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
     width: 100%;
@@ -365,7 +366,7 @@ body, html {
   }
 
   .header img {
-    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .work-container {

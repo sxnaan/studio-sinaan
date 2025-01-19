@@ -27,7 +27,7 @@ const Home = () => {
                 
                 <div className="details">
                     {isMobile ? (
-                        <MobileMenu color="white"/>
+                        <MobileMenu color="#fcc474"/>
                     ) : (
                         <>
                         <h4><Link to="/about">about</Link></h4>

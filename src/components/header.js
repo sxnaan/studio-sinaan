@@ -17,7 +17,7 @@ export default function Header(){
     }, []);
 
     const logoSize = isMobile ? 60 : 120;
-    const logo = isMobile ? '/favicon.ico' : logo_dark;
+    const logo = logo_dark;
     return (
         <div className='header'>
             <Link to="/"><img src={logo} height={logoSize}></img></Link>
