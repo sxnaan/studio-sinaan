@@ -329,7 +329,6 @@ body, html {
     align-items: flex-end;
     justify-content: center;
     margin: 0 0 5rem 0;
-    border: 1px solid #fcc474;
   }
 
   .name {
