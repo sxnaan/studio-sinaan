@@ -43,7 +43,7 @@ body, html {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  color: #fcc474;
+  color: #fed193;
 }
 
 .firstname {
@@ -70,7 +70,7 @@ body, html {
   font-size: 1.5em;
   width: 25%;
   padding-right: 2em;
-  color: #fcc474;
+  color: #fed193;
 }
 
 .details h4 {
