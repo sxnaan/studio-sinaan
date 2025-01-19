@@ -151,7 +151,6 @@ body, html {
 
 .portfolio-grid-2-col img {
   width: 100%; /* Make each image take full width of its container */
-  margin-bottom: 8.5%; /* Space between images in the same column */
   display: block; /* Avoid inline spacing issues */
 }
 
@@ -164,29 +163,31 @@ body, html {
   justify-content: center;
   flex-direction: column;
   letter-spacing: -0.05rem;
-  background-color: #fcc474;
+  background-color: #000000;
+  color: #f9f9f9;
 }
 
 .footer-copyright {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   gap: 0;
 }
 
 .footer-copyright h3 {
-  font-weight: 400;
+  font-weight: 300;
   margin-bottom: 0;
   margin-top: 0;
-  color: #d3953f;
+  color: inherit;
+  letter-spacing: -0.05rem;
 }
 
 .footer-copyright h3 b{
   font-weight: 800;
   margin-bottom: 0;
   margin-top: 0;
-  color: #d3953f;
+  color: inherit;
 }
 
 .footer-social {
@@ -196,17 +197,17 @@ body, html {
   align-items: center;
   justify-content: center;
   margin-top: 10px;
-  color: #d3953f;
+  color: inherit;
 }
 
 .footer a {
   text-decoration: none;
-  color: #d3953f;
+  color: inherit;
 }
 
 .footer a:visited {
   text-decoration: none;
-  color: #d3953f;
+  color: inherit;
 }
 
 .work-container{
@@ -216,14 +217,12 @@ body, html {
 .work-display {
   display: flex;
   flex-direction: column;
-  width: 75%;
+  width: 70%;
   height: auto;
 }
 
 .work-display img {
-  width: fit-content;
-  max-width: 100%;
-  max-height: 140vh;
+  width: 100%;
 }
 
 
@@ -238,6 +237,7 @@ body, html {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding-bottom: 20px;
 }
 
 .work-details h3 {
@@ -289,7 +289,7 @@ body, html {
 }
 
 .work-info {
-  width: 25%;
+  width: 30%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -302,6 +302,24 @@ body, html {
   display: flex;
 }
 
+.grid-work img {
+  padding-bottom: 0;
+}
+
+.portfolio-grid-2-col>.grid-img-container {
+  margin-bottom: 8.5%; /* Space between images in the same column */
+}
+
+.breadcrumbs {
+  height: 20px;
+  width: 100%;
+  padding: 2rem 6rem;
+  display: flex;
+}
+
+.breadcrumb {
+  background-color: #f9f9f921;
+}
 
 /* RESPONSIVENESS */
 @media (max-width: 768px) {
@@ -404,6 +422,11 @@ body, html {
   .page-container {
       padding: 2rem 10rem; /* Top/Bottom: 2rem, Left/Right: 10rem */
   }
+
+  .breadcrumbs {
+    padding: 1rem 10rem; /* Top/Bottom: 2rem, Left/Right: 10rem */
+  }
+
   .portfolio-grid-2-col {
     column-gap: 2em; /* Space between columns */
   }

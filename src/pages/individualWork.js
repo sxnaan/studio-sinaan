@@ -7,9 +7,6 @@ import { Link } from 'react-router-dom'
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 
-import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
-import ArrowCircleLeftIcon from '@mui/icons-material/ArrowCircleLeft';
-
 import works from '../lib/works.json';
 
 
@@ -39,14 +36,20 @@ function getLink(work){
     return `/works/${work.id}`
 }
 
-const IndividualWork = ({work}) => {
-    const pane = work.display.pane;
-    const position = work.display.position;
-    
+const IndividualWork = ({work}) => {    
     return (
         <>
         <ScrollToTop />
         <Header />
+
+        <div className='breadcrumbs'>
+            <Link className = 'breadcrumb' to='/works'><p>Works</p></Link>
+            <p>&nbsp;/&nbsp;</p>
+            <p>{work.year}</p>
+            <p>&nbsp;/&nbsp;</p>
+            <p>{work.season}</p>
+        </div>
+
         <div className='page-container'>
             
             <div className = 'work-container'>
@@ -67,7 +70,7 @@ const IndividualWork = ({work}) => {
                     </div>
                 </div>
             </div>
-            
+{/*             
             <div className='work-nav'>
                         {(pane !== 1 || position !== 1) ? (
                             <Link to={getLink(getPrev(work))}><ChevronLeftIcon fontSize='large'/> <h3>Prev</h3></Link>
@@ -75,7 +78,7 @@ const IndividualWork = ({work}) => {
                         {(pane !== 3 || position !== 2) ? (
                             <Link to={getLink(getNext(work))}><h3>Next</h3><ChevronRightIcon fontSize='large'/></Link>
                         ): <></>}
-            </div>
+            </div> */}
             {/*
             ok so we need to use the MUI pagination here eventually
             */}

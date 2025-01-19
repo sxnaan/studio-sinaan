@@ -28,18 +28,9 @@ const Works = () => {
             <div class="portfolio-grid-2-col">
                 {
                     pane1.map(work => (
-                        <>
-                        <Link to={`http://www.studiosinaan.com${work.src}`} target='_blank'><img src={work.src} alt={work.title}></img></Link>
-                        <div className='work-details'>
-                        <h3><b>{work.media.length === 1 ? (
-                            <>{work.media[0]}</>
-                        ) : (
-                            <>{work.media.join(', ')}</>
-                        )} on {work.surface}</b></h3>
-                        <h3>{work.season} Collection, {work.year}</h3>
-                        <h3>{work.x}x{work.y}</h3>
+                        <div className='grid-img-container'>
+                            <Link className="grid-work" to={`/works/${work.id}`}><img src={work.src} alt={work.title}></img></Link>
                         </div>
-                        </>
                     ))
                 }
             </div>
