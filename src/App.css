@@ -10,7 +10,7 @@ body, html {
 .parallax {
   position: relative; /* Positioned relative to allow scrolling */
   height: 150vh;
-  background: url('assets/new-background.jpg') no-repeat center bottom; /* Your background image */
+  background: url('assets/background.jpg') no-repeat center bottom; /* Your background image */
   background-size: cover; /* Cover the entire div */
   z-index: 1;
 }

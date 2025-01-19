@@ -18,7 +18,7 @@ const About = () => {
                     
                 <p>He has worked across a full range of wet and dry media. He has also explored digital fabrication (3D printing/laser cutting) and augmented/virtual reality.</p>                
                 
-                <p>His work is driven by a single question – can we create the art that we enjoy consuming? <em>To him, it isn't just possible, but necessary for that answer to be yes.</em></p>
+                {/* <p>His work is driven by a single question – can we create the art that we enjoy consuming? <em>To him, it isn't just possible, but necessary for that answer to be yes.</em></p> */}
                 <p>—</p>
                 
                 <b>Currently based in Chicago, working primarily with oil.</b>
