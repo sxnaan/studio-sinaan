@@ -16,7 +16,7 @@ export default function Header(){
         return () => window.removeEventListener('resize', handleResize);
     }, []);
 
-    const logoSize = isMobile ? 60 : 120;
+    const logoSize = isMobile ? 40 : 120;
     const logo = logo_dark;
     return (
         <div className='header'>

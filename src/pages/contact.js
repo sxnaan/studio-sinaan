@@ -57,14 +57,12 @@ const Contact = () => {
                 unless permission is explicitly granted by the client.</p>            
                 <em>Reference images can be sent in the email thread triggered by the submission of this form.</em>
 
-                <br></br>
-                <br></br>
 
-                <h4>Sample Commission Work</h4>
+{/*                 <h4>Sample Commission Work</h4>
                 <div className="commissions-container">
                     <img src="/commissions/IMG_5789.png" height={300}></img>
                     <img src="/commissions/IMG_8525.png" height={300}></img>
-                </div>
+                </div> */}
 
                 <br></br>
                 <br></br>
@@ -138,12 +136,12 @@ const Contact = () => {
                             />
                         </Grid>
                         <Grid item xs={12} container spacing={2}>
-                            <Grid item xs={12} sm={6}>
+{/*                             <Grid item xs={12} sm={6}>
                                 <ReCAPTCHA
                                     sitekey="6LdIoZ4qAAAAACrVdKc6z1EF6zYpD1md4MRN7roi"
                                     onChange={handleCaptchaChange}
                                 />
-                            </Grid>
+                            </Grid> */}
                             <Grid item xs={12} sm={6} display="flex" justifyContent="flex-end" alignItems="center">
                                 <Button type="submit" variant="contained" color="primary">
                                     Submit

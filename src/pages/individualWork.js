@@ -43,7 +43,7 @@ const IndividualWork = ({work}) => {
         <Header />
 
         <div className='breadcrumbs'>
-            <Link className = 'breadcrumb' to='/works'><p>Works</p></Link>
+            <Link to='/works'><p className='breadcrumb'>Works</p></Link>
             <p>&nbsp;/&nbsp;</p>
             <p>{work.year}</p>
             <p>&nbsp;/&nbsp;</p>
@@ -51,6 +51,7 @@ const IndividualWork = ({work}) => {
         </div>
 
         <div className='page-container'>
+            <hr className='breadcrumbs-divider'></hr>
             
             <div className = 'work-container'>
                 <div className = 'work-display'>

@@ -25,26 +25,24 @@ const Works = () => {
         <Menu />
         <div className='page-container'>
             <h1 className="page-title">Works</h1>
-            <div class="portfolio-grid-2-col">
+            <div className="portfolio-grid-2-col">
                 {
                     pane1.map(work => (
-                        <div className='grid-img-container'>
-                            <Link className="grid-work" to={`/works/${work.id}`}><img src={work.src} alt={work.title}></img></Link>
-                        </div>
+                        <Link to={`/works/${work.id}`}><img src={work.src} alt={work.title}></img></Link>
                     ))
                 }
             </div>
             <div className='portfolio-grid-1-col'>
                 {
                     pane2.map(work => (
-                        <Link to={`http://www.studiosinaan.com${work.src}`} target='_blank'><img src={work.src} alt={work.title}></img></Link>
+                        <Link to={`/works/${work.id}`}><img src={work.src} alt={work.title}></img></Link>
                     ))
                 }
             </div>
             <div class="portfolio-grid-2-col">
                 {
                     pane3.map(work => (
-                        <Link to={`http://www.studiosinaan.com${work.src}`} target='_blank'><img src={work.src} alt={work.title}></img></Link>
+                        <Link to={`/works/${work.id}`}><img src={work.src} alt={work.title}></img></Link>
                     ))
                 }
             </div>
