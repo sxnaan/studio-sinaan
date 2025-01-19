@@ -326,14 +326,17 @@ body, html {
     height: 85%;
     width: 100vw;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
-    padding: 0 0 25% 0;
+    margin: 0 0 5rem 0;
+    border: 1px solid #fcc474;
   }
 
   .name {
-    height: 100%;
+    height: fit-content;
     width: fit-content;
+    border: 0.5px solid #fcc474;
+    padding: 1rem;
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -342,9 +345,11 @@ body, html {
   .firstname {
     padding: 0;
     margin: 0;
+    font-size: 18vw;
   }
 
   .lastname {
+    font-size: 5vw;
     font-weight: 400;
   }
 
