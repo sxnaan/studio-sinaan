@@ -372,6 +372,11 @@ body, html {
     padding-right: 1rem;
   }
 
+  .portfolio-grid-2-col {
+    column-count: 1; /* Set the number of columns */
+    column-gap: 0; /* Space between columns */
+  }
+
   .work-container {
     flex-direction: column;
   }
