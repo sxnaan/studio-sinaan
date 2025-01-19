@@ -50,8 +50,8 @@ const Contact = () => {
                 <em>For general inquiries and other non-commision requests, please reach out via email at <b>hello@studiosinaan.com</b></em>
                 <h2>Commissions</h2>
                 <p>As of {month} {day}, {year} commisions are {commisionsOpen ? open : "closed"}</p> 
-                <p>All commision requests are acknowledged within 1-3 days via email. The minimum size for a commission is 16x20" but special requests are always welcome. There is no maximum size. 
-                Turnaround time varies on size and scope, but usually hovers around 2 months (including domestic shipping). Rushed orders can be placed and completed sooner for an additional fee.</p>
+                <p>All commision requests are acknowledged within 1-3 days via email. The minimum size for a commission is 16x20", but special requests are always welcome. There is no maximum size. 
+                Turnaround time varies on size and scope but usually hovers around 2 months (including domestic shipping). Rushed orders can be placed and completed sooner for an additional fee.</p>
                 
                 <p>Commissions are private and will not be displayed on this site, 
                 unless permission is explicitly granted by the client.</p>            
