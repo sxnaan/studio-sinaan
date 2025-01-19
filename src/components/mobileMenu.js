@@ -4,8 +4,7 @@ import Drawer from '@mui/material/Drawer';
 import Button from '@mui/material/Button';
 import { Link } from 'react-router-dom';
 
-import MoreVertIcon from '@mui/icons-material/MoreVert';
-import GridGoldenratioIcon from '@mui/icons-material/GridGoldenratio';
+import ShortTextIcon from '@mui/icons-material/ShortText';
 import CloseIcon from '@mui/icons-material/Close';
 
 const MobileMenu = ({color}) => {
@@ -39,7 +38,7 @@ const MobileMenu = ({color}) => {
 
   return (
     <div>
-      <Button onClick={toggleDrawer(true)}><MoreVertIcon fontSize='large' style={{color: color}}/></Button>
+      <Button onClick={toggleDrawer(true)}><ShortTextIcon fontSize='large' style={{color: color}}/></Button>
       <Drawer anchor={'right'} open={open} onClose={toggleDrawer(false)} className = 'drawer'>
         {X}
         {Links}

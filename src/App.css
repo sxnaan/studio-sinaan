@@ -298,14 +298,41 @@ body, html {
 
 
 /* RESPONSIVENESS */
-/* Increase padding for medium-sized screens */
 @media (max-width: 768px) {
   .page-container {
       padding: 2rem; /* Top/Bottom: 2rem, Left/Right: 6rem */
   }
 
+  .parallax {
+    height: 120vh;
+  }
+
   .details {
-    padding-right: 0.5em;
+    height: 15%;
+    width: 100vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 5% 0 0 0;
+  }
+
+  .name {
+    height: 85%;
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 0 10% 0;
+  }
+
+  .firstname {
+    padding: 0;
+    margin: 0;
+  }
+
+  .text-overlay {
+    flex-direction: column-reverse;
+    height: 100vh;
   }
 
   .header {

@@ -23,17 +23,17 @@ const Home = () => {
                     <h1 className="lastname">ABDURREHMAN YOUNUS</h1>
                 </div>
                 
-                    <div className="details">
-                        {isMobile ? (
-                            <MobileMenu color="white"/>
-                        ) : (
-                            <>
-                            <h4><Link to="/about">about</Link></h4>
-                            <h4><Link to="/works">works</Link></h4>
-                            <h4><Link to="/contact">contact</Link></h4>
-                            </>
-                        )}
-                    </div>
+                <div className="details">
+                    {isMobile ? (
+                        <MobileMenu color="white"/>
+                    ) : (
+                        <>
+                        <h4><Link to="/about">about</Link></h4>
+                        <h4><Link to="/works">works</Link></h4>
+                        <h4><Link to="/contact">contact</Link></h4>
+                        </>
+                    )}
+                </div>
             </div>
         </div>
         </>
