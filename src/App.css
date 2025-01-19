@@ -91,7 +91,7 @@ body, html {
 }
 
 .page-title {
-  font-size: clamp(7rem, 15vw, 12rem);
+  font-size: clamp(5rem, 10vw, 12rem);
   letter-spacing: -0.5rem;
   margin: 0;
 }
