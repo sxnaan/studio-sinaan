@@ -28,21 +28,21 @@ const Works = () => {
             <div class="portfolio-grid-2-col">
                 {
                     pane1.map(work => (
-                        <Link to={work.src}><img src={work.src} alt={work.title}></img></Link>
+                        <Link to={`http://www.studiosinaan.com${work.src}`} target='_blank'><img src={work.src} alt={work.title}></img></Link>
                     ))
                 }
             </div>
             <div className='portfolio-grid-1-col'>
                 {
                     pane2.map(work => (
-                        <Link to={work.src}><img src={work.src} alt={work.title}></img></Link>
+                        <Link to={`http://www.studiosinaan.com${work.src}`} target='_blank'><img src={work.src} alt={work.title}></img></Link>
                     ))
                 }
             </div>
             <div class="portfolio-grid-2-col">
                 {
                     pane3.map(work => (
-                        <Link to={work.src}><img src={work.src} alt={work.title}></img></Link>
+                        <Link to={`http://www.studiosinaan.com${work.src}`} target='_blank'><img src={work.src} alt={work.title}></img></Link>
                     ))
                 }
             </div>
