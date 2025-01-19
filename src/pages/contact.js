@@ -16,7 +16,7 @@ const Contact = () => {
     const day = today.getDate();
 
     const navigate = useNavigate();
-    const [captchaVerified, setCaptchaVerified] = useState(false);
+    const [captchaVerified, setCaptchaVerified] = useState(true);
 
     const handleSubmit = (event) => {
         event.preventDefault();
