@@ -232,6 +232,7 @@ body, html {
   letter-spacing: -0.3rem;
   margin: 0;
   line-height: 1;
+  text-wrap: wrap;
 }
 
 .work-details {
