@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 import './App.css';
 import works from './lib/works.json';
@@ -17,6 +18,7 @@ const App = () => {
     return (
         <ThemeProvider theme={theme}> {/* Wrap the application with ThemeProvider */}
             <Router>
+                <SpeedInsights />
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/about" element={<About />} />
