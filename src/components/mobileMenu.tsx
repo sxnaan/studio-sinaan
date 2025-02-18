@@ -32,7 +32,7 @@ const MobileMenu = ({color}: {color: string}) => {
   const Links = (
     <Box sx={{ width: '100vw', height: '85%' }} role="presentation" onClick={toggleDrawer(false)} className='box'>
       {['home','about', 'works', 'contact'].map((text) => (
-          <Link href={(text === 'home') ? "/" : `/${text}`} style={{'textDecoration': 'none', 'color': 'black'}}>
+          <Link key={text} href={(text === 'home') ? "/" : `/${text}`} style={{'textDecoration': 'none', 'color': 'black'}}>
             <h2>{text}</h2>
           </Link>
       ))}

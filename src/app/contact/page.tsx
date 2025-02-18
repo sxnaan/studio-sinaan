@@ -1,4 +1,4 @@
-import { TextField, Button, Grid, Typography, Container} from '@mui/material';
+import { TextField, Button, Grid} from '@mui/material';
 
 const Contact = () => {
     const today = new Date();
@@ -14,7 +14,7 @@ const Contact = () => {
                 <em>For general inquiries and other non-commision requests, please reach out via email at <b>hello@studiosinaan.com</b></em>
                 <h2>Commissions</h2>
                 <p>As of {month} {day}, {year} commisions are {commisionsOpen ? <span style={{"background-color":"#40826D", "color":"white", "font-weight":"bold"}}>&nbsp;OPEN&nbsp;</span> : "closed"}</p> 
-                <p>All commision requests are acknowledged within 1-3 days via email. The minimum size for a commission is 16x20", but special requests are always welcome. There is no maximum size. 
+                <p>All commision requests are acknowledged within 1-3 days via email. The minimum size for a commission is 16x20&quot;, but special requests are always welcome. There is no maximum size. 
                 Turnaround time varies on size and scope but usually hovers around 2 months (including domestic shipping). Rushed orders can be placed and completed sooner for an additional fee.</p>
                 
                 <p>Commissions are private and will not be displayed on this site, 

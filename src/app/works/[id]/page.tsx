@@ -3,6 +3,8 @@ import Link from 'next/link';
 
 import works from '@/data/works.json';
 
+import Image from 'next/image';
+
 export default async function Page({
     params,
   }: {
@@ -26,7 +28,7 @@ export default async function Page({
             
             <div className = 'work-container'>
                 <div className = 'work-display'>
-                    <img src={work.src} alt={work.title}></img>
+                    <Image src={work.src} alt={work.title} />
                 </div>
 
                 <div className = 'work-info'>
