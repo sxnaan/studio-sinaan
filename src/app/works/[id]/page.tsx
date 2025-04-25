@@ -1,5 +1,4 @@
 import React from 'react';
-import Link from 'next/link';
 
 import works from '@/data/works.json';
 
