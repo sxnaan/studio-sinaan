@@ -8,7 +8,7 @@ import Image from 'next/image';
 import logoSrc from './assets/sinaan.png';
 
 export default function Header(){
-    const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+    const [isMobile, setIsMobile] = useState(false);
 
     useEffect(() => {
         const handleResize = () => {
