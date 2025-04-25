@@ -15,20 +15,11 @@ export default async function Page({
 
     return (
         <>
-        <div className='breadcrumbs'>
-            <Link href='/works'><p className='breadcrumb'>Works</p></Link>
-            <p>&nbsp;/&nbsp;</p>
-            <p>{work.year}</p>
-            <p>&nbsp;/&nbsp;</p>
-            <p>{work.season}</p>
-        </div>
 
-        <div className='page-container'>
-            <hr className='breadcrumbs-divider'></hr>
-            
+        <div className='page-container'>            
             <div className = 'work-container'>
                 <div className = 'work-display'>
-                    <Image src={work.src} alt={work.title} />
+                    <Image src={work.src} alt={work.title} width={work.display.width} height={work.display.height}/>
                 </div>
 
                 <div className = 'work-info'>

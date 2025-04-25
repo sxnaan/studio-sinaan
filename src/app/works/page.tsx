@@ -20,7 +20,6 @@ const Works = () => {
     return (
         <>
         <div className='page-container'>
-            <h1 className="page-title">Works</h1>
             <div className="portfolio-grid-2-col">
                 {
                     pane1.map(work => (

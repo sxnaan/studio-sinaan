@@ -1,32 +1,49 @@
 /* Set the body and html to allow scrolling */
 body, html {
   margin: 0;
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: "Permanent Marker", "Helvetica Neue", sans-serif;
   height: 100%; /* Ensure full height */
   scroll-behavior: auto;
-  background-color: #fefefa;
-  color: #212120;
+  background-color: #f5f3e9;
+  color: #2A5DA8;
+  background-image: radial-gradient(rgb(151, 151, 151) 1px, transparent 0);
+  background-size: 2rem 2rem;
 }
 
 /* Full-height scrolling background */
 .parallax {
-  position: relative; /* Positioned relative to allow scrolling */
-  height: 130vh;
-  background: url('../assets/background.jpg') no-repeat center bottom; /* Your background image */
-  background-size: cover; /* Cover the entire div */
-  z-index: 1;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
+
+
+.massive-img {
+  position: relative;
+  height: 70%;
+  overflow: visible; /* allow image to overflow */
+}
+
+.massive-img img {
+  position: absolute;
+  width: 110%;
+  height: 110%;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  object-fit: cover;
+  object-position: bottom;
+}
+
 
 /* Fixed text overlay in the center of the screen */
 .text-overlay {
   display: flex;
   justify-content: space-evenly;
   align-items: end;
-  height: 100vh; /* Full height of the viewport */
+  height: 35%; /* Full height of the viewport */
   width: 100%;
-  position: fixed;
-  top: 0;
-  z-index: 2;
+  margin-top: -7rem;
 }
 
 .name-container {
@@ -45,7 +62,6 @@ body, html {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  color: #f8f6f0ea;
 }
 
 .firstname {
@@ -56,8 +72,8 @@ body, html {
 
 .lastname {
   font-size: clamp(1rem, 5vw, 2rem);
-  letter-spacing: -0.2rem;
-  font-weight: 400;
+  letter-spacing: -0.1rem;
+  font-weight: 300;
   margin-top: -2rem;
 }
 
@@ -72,7 +88,6 @@ body, html {
   font-size: 1.5em;
   width: 25%;
   padding-right: 2em;
-  color: #f8f6f0;
 }
 
 .details h4 {
@@ -80,11 +95,14 @@ body, html {
   padding: 0.25rem; /* Remove default padding */
   font-weight: 300;
   transition: font-weight 0.15s cubic-bezier(0.4, 0, 0.2, 1); 
-  background-color: #f9f9f926;
+  background-color: #67676710;
+
 }
 
 .details h4:hover {
   font-weight: 800; /* Make bold on hover */ 
+  background-color: #67676731;
+  cursor: pointer;
 }
 
 .details a {
@@ -93,19 +111,18 @@ body, html {
 }
 
 .page-title {
-  font-size: clamp(5rem, 10vw, 12rem);
+  font-size: clamp(3rem, 10vw, 6rem);
   letter-spacing: -0.5rem;
   margin: 0;
 }
 
 .page-container{
-  padding: 2rem 6rem;
+  padding: 2rem 10rem;
 }
 
 .header {
   display: flex;
   align-items: center;
-  background-color: #f8f6f0;
   flex-direction: column;
   padding-top: 20px;
 }
@@ -116,7 +133,7 @@ body, html {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  padding-top: 20px;
+  padding-top: 40px;
   padding-bottom: 20px;
 }
 
@@ -128,6 +145,8 @@ body, html {
   padding-left: 2rem;
   padding-right: 2rem;
   transition: font-weight 0.15s cubic-bezier(0.4, 0, 0.2, 1); 
+  background-color: #67676710;
+  letter-spacing: -0.05rem;
 }
 
 .menu-desktop h3:hover {
@@ -148,7 +167,7 @@ body, html {
 
 .portfolio-grid-2-col {
   column-count: 2; /* Set the number of columns */
-  column-gap: 1rem; /* Space between columns */
+  column-gap: 3rem; /* Space between columns */
 }
 
 .portfolio-grid-2-col img {
@@ -165,8 +184,6 @@ body, html {
   justify-content: center;
   flex-direction: column;
   letter-spacing: -0.05rem;
-  background-color: #212120;
-  color: #f9f9f985;
 }
 
 .footer-copyright {
@@ -204,12 +221,14 @@ body, html {
 
 .footer a {
   text-decoration: none;
-  color: #f9f9f9;
+  color: #2A5DA8;
 }
 
 .footer a:visited {
   text-decoration: none;
   color: inherit;
+  color: #2A5DA8;
+
 }
 
 .work-container{
@@ -226,6 +245,7 @@ body, html {
 
 .work-display img {
   width: 100%;
+  height: 100%;
 }
 
 
@@ -457,7 +477,13 @@ body, html {
 }
 
 /* Further increase padding for larger screens */
-@media (min-width: 1200px) {
+@media (min-width: 1600px) {
+  .parallax {
+    height: 120vh;
+    background: url('/background.jpg') repeat center bottom; /* Your background image */
+    background-size: contain; /* Cover the entire div */
+  }
+
   .page-container {
       padding: 2rem 10rem; /* Top/Bottom: 2rem, Left/Right: 10rem */
   }

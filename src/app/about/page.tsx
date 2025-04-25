@@ -4,14 +4,15 @@ import React from 'react';
 
 import Image from 'next/image';
 
+import headshot from './assets/headshot.jpg';
+
 const About = () => {
     return (
         <>
             <div className="page-container">                
-                <h1 className='page-title'>About</h1>
-                <p>SiNAAN ABDURREHMAN YOUNUS is a 23 year old mixed media artist from Baltimore.</p>
+                <p><b>SiNAAN ABDURREHMAN YOUNUS</b> is a 23 year old mixed media artist from Baltimore.</p>
                 <p>His early experiments in art were encouraged by Sarah Deacon at Perry Hall Middle School. 
-                    He later studied fine art at the University of Maryland with Emily Conover, Brandon Donahue, and Cy Keener, amongst others. </p>
+                    He studied fine art at the University of Maryland with Emily Conover, Brandon Donahue, and Cy Keener, amongst others. </p>
                     
                 <p>He has worked across a full range of wet and dry media. He has also explored digital fabrication (3D printing/laser cutting) and augmented/virtual reality.</p>                
                 
@@ -22,7 +23,7 @@ const About = () => {
                 
                 <br></br>
                 <br></br>
-                <Image src={'/assets/headshot.jpg'} height={300} width={300} alt='headshot'/>
+                <Image src={headshot} height={300} width={300} alt='headshot'/>
 
                 <br></br>
                 <br></br>

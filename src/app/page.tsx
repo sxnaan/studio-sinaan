@@ -4,6 +4,9 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import MobileMenu from '@/components/mobileMenu';
 
+import Image from 'next/image';
+import logoSrc from '../components/assets/sinaan-outline.svg';
+
 const Home = () => {
     const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
 
@@ -19,6 +22,14 @@ const Home = () => {
     return (
         <>
         <div className="parallax">
+            <div className='massive-img'>
+                <Image
+                    src={logoSrc}
+                    alt="Logo"
+                    className="logo"
+                />
+            </div>
+
             <div className="text-overlay">
                 <div className='name-container'>
                     <div className="name">
@@ -32,7 +43,7 @@ const Home = () => {
                         <MobileMenu color="#fcc474"/>
                     ) : (
                         <>
-                        <h4><Link href="/about">about</Link></h4>
+                        <h4><Link href="/about">bio</Link></h4>
                         <h4><Link href="/works">works</Link></h4>
                         <h4><Link href="/contact">contact</Link></h4>
                         </>
