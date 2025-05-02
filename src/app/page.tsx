@@ -8,7 +8,7 @@ import Image from 'next/image';
 import logoSrc from '../components/assets/sinaan-outline.svg';
 
 const Home = () => {
-    const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+    const [isMobile, setIsMobile] = useState(false);
 
     useEffect(() => {
         const handleResize = () => {
